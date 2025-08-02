@@ -1,0 +1,36 @@
+
+array:     file format elf64-littleriscv
+
+
+Disassembly of section .plt:
+
+00000000000102b0 <_PROCEDURE_LINKAGE_TABLE_>:
+   102b0:	97 23 00 00 33 03 c3 41 03 be 03 d5 13 03 43 fd     .#..3..A......C.
+   102c0:	93 82 03 d5 13 53 13 00 83 b2 82 00 67 00 0e 00     .....S......g...
+
+00000000000102d0 <printf@plt>:
+   102d0:	00002e17          	auipc	t3,0x2
+   102d4:	d40e3e03          	ld	t3,-704(t3) # 12010 <printf@GLIBC_2.27>
+   102d8:	000e0367          	jalr	t1,t3
+   102dc:	00000013          	nop
+
+Disassembly of section .text:
+
+00000000000102e0 <main>:
+   102e0:	fe010113          	addi	sp,sp,-32
+   102e4:	00113c23          	sd	ra,24(sp)
+   102e8:	00813823          	sd	s0,16(sp)
+   102ec:	02010413          	addi	s0,sp,32
+   102f0:	00000797          	auipc	a5,0x0
+   102f4:	03878793          	addi	a5,a5,56 # 10328 <main+0x48>
+   102f8:	fef43423          	sd	a5,-24(s0)
+   102fc:	00800593          	li	a1,8
+   10300:	00000517          	auipc	a0,0x0
+   10304:	03050513          	addi	a0,a0,48 # 10330 <main+0x50>
+   10308:	fc9ff0ef          	jal	ra,102d0 <printf@plt>
+   1030c:	00000793          	li	a5,0
+   10310:	00078513          	mv	a0,a5
+   10314:	01813083          	ld	ra,24(sp)
+   10318:	01013403          	ld	s0,16(sp)
+   1031c:	02010113          	addi	sp,sp,32
+   10320:	00008067          	ret
