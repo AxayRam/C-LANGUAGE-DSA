@@ -87,6 +87,8 @@ For linked list with header:
 
 gcc sll.c finallist.c -o sll
 ./sll
+'''
+
 
 ## 🧠 Concepts Covered
 
