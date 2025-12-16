@@ -75,3 +75,82 @@ Use **GCC compiler**:
 ```bash
 gcc filename.c -o output
 ./output
+
+
+Example:
+
+gcc array.c -o array
+./array
+
+
+For linked list with header:
+
+gcc sll.c finallist.c -o sll
+./sll
+
+## 🧠 Concepts Covered
+
+- C program structure  
+- Arrays (1D & 2D)  
+- Pointers and pointer arithmetic  
+- Structures and packed structures  
+- Dynamic memory allocation (`malloc`, `free`)  
+
+### Singly Linked List (SLL)
+- Initialization  
+- Insertion  
+- Deletion  
+- Traversal  
+- Search  
+
+### Queue
+- Queue implementation using linked list  
+
+### Modular Programming
+- Header files (`.h`)  
+- Static libraries (`.a`)  
+- Object files (`.o`)  
+
+---
+
+## 🛠 Tools & Technologies
+
+- **Language:** C  
+- **Compiler:** GCC  
+- **Platform:** Linux / GitHub Codespaces  
+- **Version Control:** Git & GitHub  
+
+---
+
+## 📌 Notes
+
+- This repository represents **learning and practice work**, not optimized production code  
+- Programs are intentionally written in a **simple and readable manner**  
+- Useful for:
+  - Beginners learning C  
+  - Engineering students  
+  - Interview preparation  
+  - Embedded systems foundation  
+
+---
+
+## 🚀 Future Improvements
+
+- Folder-wise organization (Arrays / SLL / Queue)  
+- Makefile support  
+- Addition of more Data Structures:
+  - Stack  
+  - Doubly Linked List  
+  - Trees  
+- Improved documentation for each program  
+
+---
+
+## 👨‍💻 Author
+
+**AxayRam**  
+Electronics & Communication Engineering  
+Embedded Systems & C Programming Enthusiast  
+
+GitHub: https://github.com/AxayRam
+
