@@ -72,7 +72,7 @@ All programs are written in **pure C**, compiled using `gcc`, and focused on **c
 
 Use **GCC compiler**:
 
-```bash
+
 gcc filename.c -o output
 ./output
 
@@ -87,7 +87,7 @@ For linked list with header:
 
 gcc sll.c finallist.c -o sll
 ./sll
-'''
+
 
 
 ## 🧠 Concepts Covered
